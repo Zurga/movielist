@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#aaaaaa"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <Button
+        android:id="@+id/save_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showSavedMovies"
+        android:text ="Saved Movies"
+        />
+        <EditText
+    android:textColor="#000"
+            android:id="@+id/query"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_toLeftOf="@+id/search_btn"
+            />
+        <Button
+            android:id="@id/search_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Search"
+            android:onClick="movieSearch"
+            android:layout_toRightOf="@id/query"
+            android:layout_alignParentRight="true"
+            />
+        <LinearLayout
+            android:background="#aaaaaa"
+            android:id="@+id/outer"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+            <ListView android:id="@+id/result_list"
+                android:background="#aaaaaa"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

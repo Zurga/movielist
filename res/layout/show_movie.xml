@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#aaaaaa"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+    android:textColor="#000"
+        android:id="@+id/movie_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+    android:textColor="#000"
+        android:id="@+id/movie_year"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+    android:textColor="#000"
+        android:id="@+id/movie_genre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+    android:textColor="#000"
+        android:id="@+id/movie_actors"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+    android:textColor="#000"
+        android:id="@+id/movie_director"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+    android:textColor="#000"
+        android:id="@+id/movie_language"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/save_movie"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveMovie"
+        android:text = "Save movie"
+        />
+</LinearLayout>
