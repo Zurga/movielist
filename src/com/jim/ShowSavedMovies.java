@@ -58,6 +58,7 @@ public class ShowSavedMovies extends Activity
         Set<String> movies = prefs.getStringSet("movies", new HashSet<String>());
         String[] test = movies.toArray(new String[0]);
         Log.d("PREFERENCE", Arrays.toString(test));
+                /*
         for (String title: movies) {
             if (!title.isNull()){
                 // A hashmap to hold all the movies and their respected values.
@@ -92,6 +93,7 @@ public class ShowSavedMovies extends Activity
                 resultList.setAdapter(adapter);
             }
         }
+        */
     }
 
     public String buildQuery(String query ){
